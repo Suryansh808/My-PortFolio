@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #000000a9;
+    color: #fff;
+    overflow: hidden;
+}
+.cursor{
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    transition: all linear 0.1s;
+}
+.main-page{
+    width: 100vw;
+    height: 100%;
+}
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+}
+.navbar .SS{
+    font-size: 18px;
+    font-weight: 600; 
+}
+.navbar .SS a{
+    color: #fff;   
+}
+.navbar .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+}
+.navbar .menu a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar i{
+    font-size: 20px;
+    display: none;
+}
+@media screen and (max-width :759px){
+    body {
+        overflow-x: hidden !important;
+        overflow-y: hidden! important;
+    }
+    .navbar i{
+        display: block;
+        cursor: pointer;
+        padding-right: 8px;
+        z-index: 999;
+    }
+    .navbar .menu{
+        display:none;
+    }
+    .navbar .menu{
+        position: absolute;
+        z-index: 999;
+        top: 0.2vh;
+        /* left:8%; */
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .navbar .menu a{
+        font-size: 30px;
+        margin-left: -35vw;
+        margin-top: 5vh;
+    }
+    .main-container .details{
+        padding: 10px 30px;
+    }
+    .footer{
+        position: fixed ;
+        bottom: 1rem;
+    }
+}
+.main-container{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-container .image{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: 0 15vw;
+    background-image: url(download.jpg);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size:cover;
+}
+.main-container .details h2 , h3{
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.main-container .details h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer{
+    margin-top: 35vh;
+    width: 100vw;
+    text-align: center;
+}
+.footer ul li{
+    list-style: none;   
+    padding: 10px 0; 
+}
+.footer ul li a{
+    color: #fff;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
